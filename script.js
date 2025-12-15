@@ -69,10 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 iconElement.classList.add("fa", "fa-circle-check", "sitechecker-secure");
                 messageElement.innerHTML = `This link <b>(${pageUrl})</b> is a secure, official Helios Browser link.`;
             } else {
-                console.log("DEBUG: UNOFFICIAL URL detected!");
-                iconElement.classList.add("fa", "fa-triangle-exclamation", "sitechecker-warning");
-                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is not an official Helios Browser link. Use at your own risk, or find a list of official Helios Browser links <a href="https://github.com/dinguschan-owo/Helios/blob/main/README.md" target="_blank" class="sitechecker-link">here</a>.`;
-            }
+                }
 
             console.log("DEBUG: Text updated inside Sitechecker box.");
         }, 200); 
